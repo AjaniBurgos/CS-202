@@ -1,0 +1,17 @@
+int strcmp(char string1[10], char string2[10])
+{
+  int index=0;
+
+  while((string1[index] != '\0') && (string2[index] != '\0'))
+  {
+    if(string1[index] < string2[index])
+    {
+      return 0;
+    }
+  }
+  if(string1[index] != '\0' || string2[index] != '\0')
+  {
+    return 0;
+  }
+  return 1;
+}
